@@ -70,15 +70,6 @@ public class showVideo extends Activity {
 	    ImageView my_image;
 	    // Progress dialog type (0 - for Horizontal progress bar)
 	    public static final int progress_bar_type = 0; 
-	    private static String file_url = "http://api.androidhive.info/progressdialog/hive.jpg";
- 		// JSON Response node names
- 			private static String KEY_SUCCESS = "success";
- 			private static String KEY_ERROR = "error";
- 			private static String KEY_ERROR_MSG = "error_msg";
- 			private static String KEY_UID = "uid";
- 			private static String KEY_NAME = "name";
- 			private static String KEY_EMAIL = "email";
- 			private static String KEY_CREATED_AT = "created_at";
 String data=null;
  		ListView list;
  	    LazyAdapter adapter;
@@ -318,10 +309,8 @@ public class DownloadFileFromURL extends AsyncTask<String, String, String> {
     protected void onPostExecute(String file_url) {
         // dismiss the dialog after the file was downloaded
         dismissDialog(progress_bar_type);
-
-        // Displaying downloaded image into image view
-        // Reading image path from sdcard
-      
+    	Toast.makeText(abc, "Download Complete.", 
+				   Toast.LENGTH_LONG).show();
     }
 
 }

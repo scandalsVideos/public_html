@@ -129,7 +129,7 @@ public class MainActivity extends Activity {
 					 JSONObject myObj = cahnnel_array.getJSONObject(i);
 					navDrawerItems.add(new NavDrawerItem(myObj.getString("catName"), navMenuIcons.getResourceId(0, -1)));
 				}
-			 navDrawerItems.add(new NavDrawerItem("Register", navMenuIcons.getResourceId(0, -1)));
+			// navDrawerItems.add(new NavDrawerItem("Register", navMenuIcons.getResourceId(0, -1)));
 		}catch(Exception e){
 			e.printStackTrace();
 			
@@ -233,16 +233,18 @@ public class MainActivity extends Activity {
 	private void displayView(int position,int listLength) {
 		// update the main content by replacing fragments
 		Fragment fragment = null;
-		if(position!=(listLength-1))
+		//if(position!=(listLength-1))
 		fragment = new HindiFragment((position+1));
-		else
+		/*else
 		{
 			Toast.makeText(abc, "Now register", 
 					   Toast.LENGTH_LONG).show();
 			 Intent in = new Intent(abc, EditProfileLayout.class);
+	
+	
              //in.putExtra("id",name1);
             startActivity(in);
-		}
+		}*/
 		/*switch (position) {
 		case 0:
 			fragment = new HindiFragment();

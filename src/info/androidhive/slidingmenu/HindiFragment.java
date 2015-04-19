@@ -93,7 +93,6 @@ public class HindiFragment extends Fragment {
 						 tv.setVisibility(View.GONE);
 					 }
 					// adding each child node to HashMap key => value
-				
 				}
 				
 			

@@ -31,12 +31,8 @@ public class UserFunctions {
 	public static String siteUrl="http://192.168.0.100/";
 private static String loginURL = siteUrl+"/login/";
 	private static String registerURL = "login/";
-	//private static String videoWebservice = "http://scandalsvideos.com/webservice.php";
 	private static String videoWebservice = siteUrl+"webservice.php";
-	
-	//private static String loginURL = "http://softtech.webege.com/login/";
-	//private static String registerURL = "http://softtech.webege.com/login/";
-	private static String login_tag = "login";
+		private static String login_tag = "login";
 	private static String register_tag = "register";
 	private static String video_tag = "shayari";
 	private static String detail__shayari_tag = "shayariData";
@@ -47,9 +43,6 @@ private static String loginURL = siteUrl+"/login/";
 	private static String deleteShayri = "deleteShayri";
 
 	// constructor
-	
-	
-	
 	public UserFunctions(){
 		jsonParser = new JSONParser();
 	}
